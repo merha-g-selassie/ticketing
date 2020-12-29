@@ -1,7 +1,6 @@
 import express from 'express';
 import { UserPayload } from '../types/UserPayload';
-import { currentUser } from '../middlewares/current-user';
-import { requireAuth } from '../middlewares/require-auth';
+import { currentUser } from '@merha-tickets/common';
 
 const router = express.Router();
 
@@ -14,7 +13,7 @@ declare global {
   }
 }
 
-router.get('/api/users/currentuser', currentUser, requireAuth, (req, res) => {
+router.get('/api/users/currentuser', currentUser, (req, res) => {
   res.send({ currentUser: req.currentUser || null });
 });
 

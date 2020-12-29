@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import { reduceEachLeadingCommentRange } from 'typescript';
 import { Password } from '../services/password';
 
 // An interface that describes the properties
