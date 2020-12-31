@@ -2,8 +2,8 @@ This project is an implementation of a microservices architecture using:
 - Express 
 - Nextjs
 - MongoDB
-- NATS
+- NATS streaming server
 - Docker
 - Kubernetes
-- Skaffold
 - Google Cloud Platform
+- Skaffold
