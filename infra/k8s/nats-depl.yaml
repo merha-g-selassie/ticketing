@@ -27,7 +27,7 @@ spec:
             '-hbf', # nb of times each client can fail before nats streaming server  is going to assume that that connection is dead and gone
             '2',
             '-SD',
-            '-cid',
+            '-cid', # clusterId
             'ticketing'
           ]
 ---
